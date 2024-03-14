@@ -13,3 +13,5 @@ A mathematical game where the player answers 10 questions as soon as possible
 4. Answer 10 questions
 5. Once all 10 answers are answered, a table of data is shown, indicating what questions were wrong/correct
 6. If the user wants to reply, simply click the "Reply" button or refresh
+
+*Writing down the results somewhere is recommended for further analysis*
