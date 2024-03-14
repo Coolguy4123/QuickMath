@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>QuickMath</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header_div">
+        <h1 class="header">Welcome to Quick Math</h1>
+    </div>
+
+    <div id="menu" style="background-color: lightcyan;">
+        <p id="selection_title"><b><u>Selection</u></b></p>
+
+        <div>
+            <p><strong>Difficulty</strong></p>
+            <input type="radio" name="mode" id="easy" value="Easy">Easy
+            <input type="radio" name="mode" id="medium" value="Medium">Medium
+            <input type="radio" name="mode" id="hard" value="Hard">Hard
+            <input type="radio" name="mode" id="extreme" value="Extreme">Extreme
+        </div>
+
+        <div id="type_container">
+            <p><strong>Type</strong></p>
+            <input type="radio" name="type" id="addition" value="Addition">Addition
+            <input type="radio" name="type" id="subtraction" value="Subtraction">Subtraction
+            <input type="radio" name="type" id="multiplication" value="Multiplication">Multiplication
+        </div>
+        <button id="startButton" onclick="start()">Start</button>
+    </div>
+
+    <div id="quest_box">
+        <div class="question-container">
+            <div id="questionNumber" class="scoreboard">Question#</div>
+            <div id="timer">00:00:00</div>
+            <p id="question">Welcome</p>
+        </div>
+
+        <input type="text" id="ans" placeholder="Enter here when game starts" disabled="true">
+        <button id="submitButton" onclick="storeCheckAns()" disabled="true">Submit</button>
+    </div>
+
+    <br><br><br>
+    <input type="button" id="Resultbtn" value="Show Results" onclick="displayTable()" style="visibility: visible">
+    <div id="Results" style="visibility: visible">
+        <table id="resultTable">
+            <tr>
+                <th>Number</th>
+                <th>Question</th>
+                <th>Your Answer</th>
+                <th>Correct Answer</th>
+                <th>Status</th>
+                <th>Time</th>
+                <th>Points</th>
+            </tr>
+            <tr class="totalText">
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="totalTime"></td>
+                <td id="totalPoints"></td>
+            </tr>
+        </table>
+        <button class="replayBtn" onclick="refresh()">Replay</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
